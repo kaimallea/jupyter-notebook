@@ -5,7 +5,7 @@ Slightly tweaked version of jupyter/scipy-notebook.
 1. Installs `google-api-python-client` via `pip`.
 2. Mounts Google Cloud credentials (`~/.config/gcloud`) into the container when running.
 
-These tweaks enable me to access BigQuery directly via Pandas. 🔥
+These tweaks enable me to access BigQuery via Pandas directly from the notebook. 🔥
 ## Usage
 
 1. Run `make`
@@ -17,7 +17,7 @@ By default, the current working directory (typically root of this repo) will bec
 For example:
 
 ```bash
-> NOTEBOOKS = /home/kai/notebooks make
+$ NOTEBOOKS=/home/kai/notebooks make
 ```
 
-Or override the default value for `NOTEBOOKS` at the top of the `Makefile`.
+...OR simply override the default value for `NOTEBOOKS` at the top of the `Makefile`.
