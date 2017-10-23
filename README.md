@@ -21,3 +21,11 @@ $ NOTEBOOKS=/home/kai/notebooks make
 ```
 
 ...OR simply override the default value for `NOTEBOOKS` at the top of the `Makefile`.
+
+### Pro Tips
+
+I added this alias in my `.bash_profile` that enables me to type `jup` in my terminal, and it'll start a jupyter notebook using whatever my current directory is as the working directory:
+  
+```
+alias jup='NOTEBOOKS=$(PWD) make -C ~/src/jupyter-notebook/'
+```
